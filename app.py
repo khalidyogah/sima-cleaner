@@ -19,7 +19,7 @@ def clean_excel(file, key_column='A'):
         for mrange in list(sheet.merged_cells):
             sheet.unmerge_cells(str(mrange))
 
-        sheet.delete_rows(1, 6)
+        sheet.delete_rows(1, 5)
 
         col_index = ord(key_column.upper()) - ord('A') + 1
         last_data_row = 0

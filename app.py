@@ -64,7 +64,7 @@ def clean_excel(file, key_column='A'):
                     cell.number_format = '#,##0.00'
 
         sheet._images.clear()
-        sheet.freeze_panes = sheet["A3"]
+        sheet.freeze_panes = sheet["A4"]
 
         for row in sheet.iter_rows(min_row=1, max_row=sheet.max_row, min_col=1, max_col=sheet.max_column):
             for cell in row:

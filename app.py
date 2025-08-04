@@ -21,7 +21,7 @@ def clean_excel(file, key_column='A'):
 
         sheet.delete_rows(1, 6)
 
-        col_index = ord(key_column.upper()) - ord('A') + 1
+        col_index = ord(key_column.upper()) - ord('P') + 1
         last_data_row = 0
         for row in reversed(range(1, sheet.max_row + 1)):
             if sheet.cell(row=row, column=col_index).value not in (None, ""):
